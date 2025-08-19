@@ -1,0 +1,106 @@
+/* --- Global: stop accidental horizontal scroll --- */
+html, body, #root {
+  overflow-x: hidden;
+  }
+
+  /* --- Easy knobs (edit these values only) --- */
+  :root {
+    /* Background width + height */
+      --bg-w-mobile: 100%;   /* e.g. 92% to inset on mobile */
+        --bg-w-desktop: 100%;  /* e.g. 85% on desktop */
+          --bg-h-mobile: 70vh;
+            --bg-h-desktop: 80vh;
+            }
+
+            /* Background section */
+            .background-section {
+              flex-grow: 1;
+                width: var(--bg-w-mobile);
+                  height: var(--bg-h-mobile);
+                    margin: 0 auto;                 /* center when width < 100% */
+                      box-sizing: border-box;         /* padding won't cause overflow */
+                        padding: 30px 20px;
+
+                          background-image: url("https://archive.org/download/img-20250811-wa-0028/IMG-20250811-WA0028.jpg");
+                            background-size: cover;
+                              background-position: center;
+
+                                display: flex;
+                                  justify-content: center;
+                                    align-items: center;
+                                    }
+
+                                    /* Glassmorphism subscription card */
+                                    .subscription-box {
+                                      width: 100%;
+                                        max-width: 300px;
+                                          text-align: center;
+                                            background-color: rgba(255, 255, 255, 0.15);
+                                              backdrop-filter: blur(5px);
+                                                -webkit-backdrop-filter: blur(5px);
+                                                  padding: 30px 20px;
+                                                    border-radius: 16px;
+                                                      border: 1px solid rgba(255, 255, 255, 0.3);
+                                                        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+                                                          margin: 20px auto;
+                                                          }
+
+                                                          .subscription-box h2 {
+                                                            font-size: 1.6rem;
+                                                              font-weight: bold;
+                                                                line-height: 1.6;
+                                                                  margin-bottom: 20px;
+                                                                  }
+
+                                                                  .or-text {
+                                                                    font-size: 1.2rem;
+                                                                      font-weight: bold;
+                                                                        margin: 16px 0;
+                                                                        }
+
+                                                                        /* Buttons */
+                                                                        .premium-button,
+                                                                        .start-button,
+                                                                        .support-button {
+                                                                          display: block;
+                                                                            width: 100%;
+                                                                              padding: 14px;
+                                                                                font-size: 16px;
+                                                                                  border-radius: 12px;
+                                                                                    cursor: pointer;
+                                                                                      margin-bottom: 16px;
+                                                                                      }
+
+                                                                                      .premium-button { background-color: #ff9800; color: #fff; border: none; }
+                                                                                      .start-button   { background-color: #4caf50; color: #fff; border: none; }
+
+                                                                                      /* Footer support button */
+                                                                                      .support-button {
+                                                                                        background-color: rgba(17, 17, 17, 0.7);
+                                                                                          color: #fff;
+                                                                                            border: 1px solid #444;
+                                                                                              margin: 20px auto;
+                                                                                                max-width: 600px;
+                                                                                                }
+
+                                                                                                /* --- Desktop overrides --- */
+                                                                                                @media (min-width: 1024px) {
+                                                                                                  .background-section {
+                                                                                                      width: var(--bg-w-desktop);
+                                                                                                          height: var(--bg-h-desktop);
+                                                                                                            }
+
+                                                                                                              .subscription-box {
+                                                                                                                  max-width: 400px;
+                                                                                                                      padding: 40px 30px;
+                                                                                                                        }
+
+                                                                                                                          .subscription-box h2 { font-size: 2rem; }
+
+                                                                                                                            .premium-button,
+                                                                                                                              .start-button,
+                                                                                                                                .support-button {
+                                                                                                                                    font-size: 18px;
+                                                                                                                                        padding: 16px;
+                                                                                                                                          }
+                                                                                                                                          }

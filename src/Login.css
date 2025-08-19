@@ -1,0 +1,142 @@
+/* Page background */
+.login-page {
+  background-image: url("https://archive.org/download/audiooks_blue/audiooks_blue.png");
+    background-size: cover;
+      background-position: center;
+        min-height: 100vh;
+          display: flex;
+            justify-content: center;
+              align-items: center;
+                padding: 20px;
+                }
+
+                /* Container box */
+                .login-container {
+                  background: rgba(0, 0, 0, 0.7);
+                    padding: 30px 20px;
+                      border-radius: 16px;
+                        width: 100%;
+                          max-width: 400px;
+                            text-align: center;
+                              color: white;
+                              }
+
+                              /* Logo */
+                              .login-logo {
+                                width: 80px;
+                                  margin-bottom: 15px;
+                                    border-radius: 50%;
+                                    }
+
+                                    /* Subtitle */
+                                    .subtitle {
+                                      margin-bottom: 20px;
+                                        font-size: 14px;
+                                          opacity: 0.9;
+                                          }
+
+                                          /* Inputs */
+                                          .input-field {
+                                            display: block;
+                                              margin-bottom: 12px;
+                                                width: 100%;
+                                                  padding: 12px 10px;
+                                                    border-radius: 8px;
+                                                      border: 1px solid #ccc;
+                                                        font-size: 14px;
+                                                        }
+
+                                                        /* Terms */
+                                                        .terms {
+                                                          margin-bottom: 12px;
+                                                            font-size: 12px;
+                                                              text-align: left;
+                                                              }
+
+                                                              .terms a {
+                                                                color: #4dabf7;
+                                                                }
+
+                                                                /* Error / Success */
+                                                                .error {
+                                                                  color: red;
+                                                                    font-size: 13px;
+                                                                    }
+
+                                                                    .success {
+                                                                      color: lightgreen;
+                                                                        font-size: 13px;
+                                                                        }
+
+                                                                        /* Buttons */
+                                                                        .button-row {
+                                                                          display: flex;
+                                                                            gap: 10px;
+                                                                              margin-top: 10px;
+                                                                              }
+
+                                                                              .btn {
+                                                                                flex: 1;
+                                                                                  padding: 12px;
+                                                                                    border-radius: 8px;
+                                                                                      font-size: 15px;
+                                                                                        font-weight: bold;
+                                                                                          cursor: pointer;
+                                                                                          }
+
+                                                                                          /* Specific buttons */
+                                                                                          .login-btn {
+                                                                                            border: none;
+                                                                                              background: #1976d2;
+                                                                                                color: white;
+                                                                                                }
+
+                                                                                                .signup-btn {
+                                                                                                  border: none;
+                                                                                                    background: #2e7d32;
+                                                                                                      color: white;
+                                                                                                      }
+
+                                                                                                      .google-btn {
+                                                                                                        display: flex;
+                                                                                                          align-items: center;
+                                                                                                            justify-content: center;
+                                                                                                              gap: 10px;
+                                                                                                                width: 100%;
+                                                                                                                  padding: 12px;
+                                                                                                                    border-radius: 8px;
+                                                                                                                      border: 1px solid #ccc;
+                                                                                                                        background: white;
+                                                                                                                          color: #333;
+                                                                                                                            font-weight: bold;
+                                                                                                                              font-size: 14px;
+                                                                                                                              }
+
+                                                                                                                              .google-btn img {
+                                                                                                                                width: 20px;
+                                                                                                                                  height: 20px;
+                                                                                                                                  }
+
+                                                                                                                                  /* "or" text */
+                                                                                                                                  .or {
+                                                                                                                                    margin: 15px 0;
+                                                                                                                                      font-size: 13px;
+                                                                                                                                        opacity: 0.8;
+                                                                                                                                        }
+
+                                                                                                                                        /* Responsive tweaks */
+                                                                                                                                        @media (max-width: 600px) {
+                                                                                                                                          h2 {
+                                                                                                                                              font-size: 18px;
+                                                                                                                                                }
+                                                                                                                                                  p {
+                                                                                                                                                      font-size: 12px;
+                                                                                                                                                        }
+                                                                                                                                                          button {
+                                                                                                                                                              font-size: 14px;
+                                                                                                                                                                  padding: 10px;
+                                                                                                                                                                    }
+                                                                                                                                                                      .login-logo {
+                                                                                                                                                                          width: 60px !important;
+                                                                                                                                                                            }
+                                                                                                                                                                            }

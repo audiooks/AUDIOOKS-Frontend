@@ -1,0 +1,238 @@
+/* ---------- Root Container ---------- */
+.preferences-container {
+  width: 100vw;
+    min-height: 100vh;
+      display: flex;
+        flex-direction: column;
+          background-color: #000;
+            color: #fff;
+            }
+
+            /* ---------- Top Section ---------- */
+            .preferences-top {
+              position: relative;
+                height: 40vh;
+                  width: 100%;
+                  }
+
+                  .preferences-top-img {
+                    width: 100%;
+                      height: 100%;
+                        object-fit: cover;
+                        }
+
+                        .preferences-top-overlay {
+                          position: absolute;
+                            top: 20%;
+                              left: 50%;
+                                transform: translateX(-50%);
+                                  text-align: center;
+                                    width: 90%;
+                                    }
+
+                                    .preferences-title {
+                                      font-size: 1.8rem;
+                                        font-weight: bold;
+                                          color: #d97706;
+                                          }
+
+                                          .preferences-subtext {
+                                            font-size: 1rem;
+                                              margin-top: 10px;
+                                                color: #fff;
+                                                }
+
+                                                /* ---------- Bottom Section ---------- */
+                                                .preferences-bottom {
+                                                  flex-grow: 1;
+                                                    background-image: url("https://archive.org/download/img-20250811-wa-0028/IMG-20250811-WA0028.jpg");
+                                                      background-size: cover;
+                                                        background-position: center;
+                                                          padding: 20px;
+                                                            display: flex;
+                                                              justify-content: center;
+                                                                align-items: flex-start;
+                                                                }
+
+                                                                .preferences-card {
+                                                                  width: 100%;
+                                                                    max-width: 600px;
+                                                                      background-color: rgba(255, 255, 255, 0.15);
+                                                                        backdrop-filter: blur(6px);
+                                                                          -webkit-backdrop-filter: blur(6px);
+                                                                            padding: 20px;
+                                                                              border-radius: 12px;
+                                                                                border: 1px solid rgba(255, 255, 255, 0.3);
+                                                                                }
+
+                                                                                /* ---------- Form Fields ---------- */
+                                                                                .preferences-field {
+                                                                                  margin-bottom: 20px;
+                                                                                    display: flex;
+                                                                                      flex-direction: column;
+                                                                                      }
+
+                                                                                      .preferences-label {
+                                                                                        font-size: 1rem;
+                                                                                          font-weight: 600;
+                                                                                            color: #fff;
+                                                                                              display: flex;
+                                                                                                justify-content: space-between;
+                                                                                                  margin-bottom: 6px;
+                                                                                                  }
+
+                                                                                                  .required {
+                                                                                                    font-size: 0.85rem;
+                                                                                                      color: #aaa;
+                                                                                                      }
+
+                                                                                                      /* ---------- Footer Buttons ---------- */
+                                                                                                      .preferences-footer {
+                                                                                                        display: flex;
+                                                                                                          justify-content: space-between;
+                                                                                                            margin-top: 30px;
+                                                                                                            }
+
+                                                                                                            .preferences-btn {
+                                                                                                              border: none;
+                                                                                                                padding: 10px 20px;
+                                                                                                                  border-radius: 8px;
+                                                                                                                    cursor: pointer;
+                                                                                                                      color: #fff;
+                                                                                                                        font-size: 1rem;
+                                                                                                                        }
+
+                                                                                                                        .back-btn {
+                                                                                                                          background-color: #333;
+                                                                                                                          }
+
+                                                                                                                          .next-btn {
+                                                                                                                            background-color: #d97706;
+                                                                                                                            }
+
+                                                                                                                            /* ---------- Multi-Select + Pills (first block) ---------- */
+                                                                                                                            .pill-row {
+                                                                                                                              display: flex;
+                                                                                                                                flex-wrap: wrap;
+                                                                                                                                  gap: 8px;
+                                                                                                                                    margin: 8px 0 12px 0;
+                                                                                                                                    }
+
+                                                                                                                                    .pill-item {
+                                                                                                                                      background-color: rgba(255, 255, 255, 0.2);
+                                                                                                                                        color: #fff;
+                                                                                                                                          border: none;
+                                                                                                                                            padding: 6px 12px;
+                                                                                                                                              border-radius: 9999px;
+                                                                                                                                                cursor: pointer;
+                                                                                                                                                  font-size: 0.9rem;
+                                                                                                                                                  }
+
+                                                                                                                                                  .pill-item:active {
+                                                                                                                                                    transform: scale(0.98);
+                                                                                                                                                    }
+
+                                                                                                                                                    .multi-select {
+                                                                                                                                                      position: relative;
+                                                                                                                                                      }
+
+                                                                                                                                                      .multi-select__control {
+                                                                                                                                                        width: 100%;
+                                                                                                                                                          padding: 10px 12px;
+                                                                                                                                                            border-radius: 8px;
+                                                                                                                                                              border: none;
+                                                                                                                                                                background: rgba(255, 255, 255, 0.9);
+                                                                                                                                                                  color: #000;
+                                                                                                                                                                    text-align: left;
+                                                                                                                                                                      font-size: 1rem;
+                                                                                                                                                                      }
+
+                                                                                                                                                                      .multi-select__menu {
+                                                                                                                                                                        position: relative;
+                                                                                                                                                                          margin-top: 8px;
+                                                                                                                                                                            background: rgba(20, 20, 20, 0.95);
+                                                                                                                                                                              border: 1px solid rgba(255, 255, 255, 0.15);
+                                                                                                                                                                                border-radius: 10px;
+                                                                                                                                                                                  padding: 10px;
+                                                                                                                                                                                  }
+
+                                                                                                                                                                                  .multi-select__options {
+                                                                                                                                                                                    max-height: 220px;
+                                                                                                                                                                                      overflow-y: auto;
+                                                                                                                                                                                        display: flex;
+                                                                                                                                                                                          flex-direction: column;
+                                                                                                                                                                                            gap: 8px;
+                                                                                                                                                                                            }
+
+                                                                                                                                                                                            .option-row {
+                                                                                                                                                                                              display: flex;
+                                                                                                                                                                                                align-items: center;
+                                                                                                                                                                                                  gap: 10px;
+                                                                                                                                                                                                    background: rgba(255, 255, 255, 0.07);
+                                                                                                                                                                                                      padding: 10px;
+                                                                                                                                                                                                        border-radius: 8px;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .option-row input[type="checkbox"] {
+                                                                                                                                                                                                          width: 18px;
+                                                                                                                                                                                                            height: 18px;
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                            .muted {
+                                                                                                                                                                                                              color: #cfcfcf;
+                                                                                                                                                                                                                font-size: 0.9rem;
+                                                                                                                                                                                                                  padding: 8px 0;
+                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                  /* ---------- Multi-Select + Pills (duplicate block kept) ---------- */
+                                                                                                                                                                                                                  /* Pills row - prevent screen jump */
+                                                                                                                                                                                                                  .pill-row {
+                                                                                                                                                                                                                    display: flex;
+                                                                                                                                                                                                                      flex-wrap: wrap;
+                                                                                                                                                                                                                        gap: 6px;
+                                                                                                                                                                                                                          margin-bottom: 8px;
+                                                                                                                                                                                                                            max-height: 60px;        /* limit height */
+                                                                                                                                                                                                                              overflow-y: auto;        /* scroll inside if too many */
+                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                              /* Dropdown */
+                                                                                                                                                                                                                              .multi-select {
+                                                                                                                                                                                                                                position: relative;      /* for absolute menu */
+                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                .multi-select__menu {
+                                                                                                                                                                                                                                  position: absolute;
+                                                                                                                                                                                                                                    background: white;
+                                                                                                                                                                                                                                      border: 1px solid #ddd;
+                                                                                                                                                                                                                                        border-radius: 8px;
+                                                                                                                                                                                                                                          margin-top: 4px;
+                                                                                                                                                                                                                                            width: 100%;
+                                                                                                                                                                                                                                              max-height: 200px;
+                                                                                                                                                                                                                                                overflow-y: auto;
+                                                                                                                                                                                                                                                  z-index: 10;             /* stay above other content */
+                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                  /* Each option row in the dropdown */
+                                                                                                                                                                                                                                                  .option-row {
+                                                                                                                                                                                                                                                    display: flex;
+                                                                                                                                                                                                                                                      align-items: center;
+                                                                                                                                                                                                                                                        gap: 8px;
+                                                                                                                                                                                                                                                          padding: 6px 10px;
+                                                                                                                                                                                                                                                            cursor: pointer;
+                                                                                                                                                                                                                                                              color: #333;             /* <-- ensure text visible */
+                                                                                                                                                                                                                                                                background: #fff;        /* <-- white background */
+                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                .option-row:hover {
+                                                                                                                                                                                                                                                                  background: #f0f0f0;     /* highlight on hover */
+                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                  .option-row input[type="checkbox"] {
+                                                                                                                                                                                                                                                                    transform: scale(1.2);
+                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                    /* Highlight checked items */
+                                                                                                                                                                                                                                                                    .option-row input[type="checkbox"]:checked + span {
+                                                                                                                                                                                                                                                                      font-weight: bold;
+                                                                                                                                                                                                                                                                        color: #007bff;          /* nice blue when selected */
+                                                                                                                                                                                                                                                                        }

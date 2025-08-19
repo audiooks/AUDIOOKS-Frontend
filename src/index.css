@@ -1,0 +1,174 @@
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+        font-weight: 400;
+
+          color-scheme: light dark;
+            color: rgba(255, 255, 255, 0.87);
+              background-color: #242424;
+
+                font-synthesis: none;
+                  text-rendering: optimizeLegibility;
+                    -webkit-font-smoothing: antialiased;
+                      -moz-osx-font-smoothing: grayscale;
+
+                        --radius: 0.625rem;
+                          --background: #ffffff;
+                            --foreground: #242424;
+                              --card: #ffffff;
+                                --card-foreground: #242424;
+                                  --popover: #ffffff;
+                                    --popover-foreground: #242424;
+                                      --primary: #242424;
+                                        --primary-foreground: #fefefe;
+                                          --secondary: #f5f5f5;
+                                            --secondary-foreground: #242424;
+                                              --muted: #f5f5f5;
+                                                --muted-foreground: #8a8a8a;
+                                                  --accent: #f5f5f5;
+                                                    --accent-foreground: #242424;
+                                                      --destructive: #ef4444;
+                                                        --border: #e5e5e5;
+                                                          --input: #e5e5e5;
+                                                            --ring: #a3a3a3;
+
+                                                              --brand: #2563eb;
+                                                                --brand-2: #22c55e;
+                                                                  --text-dark: #1f2937;
+                                                                    --text-dim: #6b7280;
+                                                                      --error: #ef4444;
+                                                                        --success: #16a34a;
+                                                                        }
+
+                                                                        a {
+                                                                          font-weight: 500;
+                                                                            color: #646cff;
+                                                                              text-decoration: inherit;
+                                                                              }
+                                                                              a:hover {
+                                                                                color: #535bf2;
+                                                                                }
+
+                                                                                body {
+                                                                                  margin: 0;
+                                                                                    display: flex;
+                                                                                      place-items: center;
+                                                                                        min-width: 320px;
+                                                                                          min-height: 100vh;
+                                                                                            font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+                                                                                            }
+
+                                                                                            h1 {
+                                                                                              font-size: 3.2em;
+                                                                                                line-height: 1.1;
+                                                                                                }
+
+                                                                                                button {
+                                                                                                  border-radius: 8px;
+                                                                                                    border: 1px solid transparent;
+                                                                                                      padding: 0.6em 1.2em;
+                                                                                                        font-size: 1em;
+                                                                                                          font-weight: 500;
+                                                                                                            font-family: inherit;
+                                                                                                              background-color: #1a1a1a;
+                                                                                                                cursor: pointer;
+                                                                                                                  transition: border-color 0.25s;
+                                                                                                                  }
+                                                                                                                  button:hover {
+                                                                                                                    border-color: #646cff;
+                                                                                                                    }
+                                                                                                                    button:focus,
+                                                                                                                    button:focus-visible {
+                                                                                                                      outline: 4px auto -webkit-focus-ring-color;
+                                                                                                                      }
+
+                                                                                                                      @media (prefers-color-scheme: light) {
+                                                                                                                        :root {
+                                                                                                                            color: #213547;
+                                                                                                                                background-color: #ffffff;
+                                                                                                                                  }
+                                                                                                                                    a:hover {
+                                                                                                                                        color: #747bff;
+                                                                                                                                          }
+                                                                                                                                            button {
+                                                                                                                                                background-color: #f9f9f9;
+                                                                                                                                                  }
+                                                                                                                                                  }
+
+                                                                                                                                                  /* Background wrapper */
+                                                                                                                                                  .auth-bg {
+                                                                                                                                                    min-height: 100vh;
+                                                                                                                                                      background-size: cover;
+                                                                                                                                                        background-position: center;
+                                                                                                                                                          position: relative;
+                                                                                                                                                            overflow: hidden;
+                                                                                                                                                              display: grid;
+                                                                                                                                                                place-items: center;
+                                                                                                                                                                  padding: 24px;
+                                                                                                                                                                  }
+
+                                                                                                                                                                  /* Glass card */
+                                                                                                                                                                  .auth-card {
+                                                                                                                                                                    width: 100%;
+                                                                                                                                                                      max-width: 410px;
+                                                                                                                                                                        backdrop-filter: blur(14px);
+                                                                                                                                                                          -webkit-backdrop-filter: blur(14px);
+                                                                                                                                                                            background: linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.08));
+                                                                                                                                                                              border: 1px solid rgba(255, 255, 255, 0.25);
+                                                                                                                                                                                border-radius: 16px;
+                                                                                                                                                                                  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+                                                                                                                                                                                    padding: 28px 24px 22px;
+                                                                                                                                                                                      color: var(--text-dark);
+                                                                                                                                                                                        animation: float-in 400ms ease;
+                                                                                                                                                                                        }
+
+                                                                                                                                                                                        /* Animations */
+                                                                                                                                                                                        .fade-in {
+                                                                                                                                                                                          animation: fade-in 500ms ease both;
+                                                                                                                                                                                          }
+                                                                                                                                                                                          @keyframes fade-in {
+                                                                                                                                                                                            from { opacity: 0; transform: translateY(6px); }
+                                                                                                                                                                                              to { opacity: 1; transform: translateY(0); }
+                                                                                                                                                                                              }
+                                                                                                                                                                                              @keyframes float-in {
+                                                                                                                                                                                                from { transform: translateY(10px); }
+                                                                                                                                                                                                  to { transform: translateY(0); }
+                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                  /* Inputs */
+                                                                                                                                                                                                  .input-wrap { position: relative; margin-bottom: 12px; }
+                                                                                                                                                                                                  .input-icon {
+                                                                                                                                                                                                    position: absolute;
+                                                                                                                                                                                                      left: 12px;
+                                                                                                                                                                                                        top: 50%;
+                                                                                                                                                                                                          transform: translateY(-50%);
+                                                                                                                                                                                                            color: #6b7280;
+                                                                                                                                                                                                            }
+                                                                                                                                                                                                            .auth-input {
+                                                                                                                                                                                                              width: 100%;
+                                                                                                                                                                                                                padding: 12px 12px 12px 38px;
+                                                                                                                                                                                                                  border-radius: 10px;
+                                                                                                                                                                                                                    border: 1px solid #d1d5db;
+                                                                                                                                                                                                                      outline: none;
+                                                                                                                                                                                                                        background: rgba(255,255,255,0.9);
+                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                        .auth-input:focus {
+                                                                                                                                                                                                                          border-color: var(--brand);
+                                                                                                                                                                                                                            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                            /* Buttons */
+                                                                                                                                                                                                                            .btn {
+                                                                                                                                                                                                                              flex: 1;
+                                                                                                                                                                                                                                padding: 12px 14px;
+                                                                                                                                                                                                                                  border-radius: 12px;
+                                                                                                                                                                                                                                    border: none;
+                                                                                                                                                                                                                                      cursor: pointer;
+                                                                                                                                                                                                                                        font-weight: 600;
+                                                                                                                                                                                                                                          transition: transform 120ms ease, box-shadow 120ms ease, opacity 120ms ease;
+                                                                                                                                                                                                                                            color: #fff;
+                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                            .btn-primary { background: linear-gradient(135deg, #2563eb, #1d4ed8); }
+                                                                                                                                                                                                                                            .btn-success { background: linear-gradient(135deg, #22c55e, #16a34a); }
+                                                                                                                                                                                                                                            .btn:hover { transform: translateY(-1px); box-shadow: 0 8px 18px rgba(0,0,0,0.18); }
+                                                                                                                                                                                                                                            .btn:active { transform: translateY(0); }
